@@ -84,9 +84,9 @@ INDUSTRIES = [
 # Stats
 STATS = [
     {"number": "17+", "label": "Years of Excellence"},
+    {"number": "IBA Approved", "label": "Logistics Operator"},
+    {"number": "Nation-wide", "label": "Transport Operations"},
     {"number": "20+", "label": "Dedicated Employees"},
-    {"number": "Nation-wide", "label": "Network Coverage"},
-    {"number": "Bank", "label": "Approved Operator"}
 ]
 
 # About content from LinkedIn
@@ -94,7 +94,7 @@ ABOUT_CONTENT = {
     "intro": "Welcome to NLIPL – a trailblazer in the transport and logistics industry since 2007.",
     "description": "With a robust foundation established in 2011, we have evolved into a dynamic force with over 20 dedicated employees. NLIPL is not just a logistics company; we are the architects of seamless connectivity across diverse topographies.",
     "mission": "Our journey began with a commitment to excellence, and over the years, we've mastered the art of navigating complexities with precision and reliability.",
-    "highlight": "As a bank-approved transport operator, NLIPL operates on a nationwide scale, with branches strategically positioned across India. From serving FMCG giants to collaborating with ISRO, our versatile portfolio showcases our ability to cater to a broad spectrum of clientele.",
+    "highlight": "As a IBA approved transport operator, NLIPL operates on a nationwide scale, with branches strategically positioned across India. From serving FMCG giants to collaborating with ISRO, our versatile portfolio showcases our ability to cater to a broad spectrum of clientele.",
     "closing": "Join us on this journey as we continue to redefine logistics, connect businesses, and contribute to the growth and success of enterprises across India.",
     "motto": "Where Logistics Meets Excellence"
 }
