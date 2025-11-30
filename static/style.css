@@ -9,7 +9,7 @@
     --primary-dark: #051b2c;
     --primary-navy: #0085a8;
     --peacock-blue: #00A5D1;
-    --peacock-blue-light: #0098c2;
+    --peacock-blue-light: #2bb8d9;
     --peacock-teal: #0090b8;
     --accent-orange: #e85d2d;
     --accent-orange-light: #ff7043;
@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, #0a3654 0%, var(--peacock-blue) 60%, var(--peacock-blue-light) 100%);
+    background: linear-gradient(135deg, #0a3654 0%, var(--peacock-blue) 50%, var(--peacock-blue-light) 100%);
 }
 
 .hero-pattern {
@@ -550,7 +550,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Stats Section */
 .stats {
-    background: linear-gradient(135deg, #0a3654 0%, var(--peacock-blue) 60%, var(--peacock-blue-light) 100%);
+    background: linear-gradient(135deg, #0a3654 0%, var(--peacock-blue) 50%, var(--peacock-blue-light) 100%);
     padding: 64px 0;
     position: relative;
     z-index: 10;
@@ -709,7 +709,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Leadership Section */
 .leadership {
     padding: var(--section-padding);
-    background: linear-gradient(135deg, #0a3654 0%, var(--peacock-blue) 60%, var(--peacock-blue-light) 100%);
+    background: linear-gradient(135deg, #0a3654 0%, var(--peacock-blue) 50%, var(--peacock-blue-light) 100%);
 }
 
 .leadership .section-tag,
@@ -960,7 +960,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Industries Section */
 .industries {
     padding: var(--section-padding);
-    background: linear-gradient(135deg, #0a3654 0%, var(--peacock-blue) 60%, var(--peacock-blue-light) 100%);
+    background: linear-gradient(135deg, #0a3654 0%, var(--peacock-blue) 50%, var(--peacock-blue-light) 100%);
     overflow: hidden;
 }
 
@@ -1252,7 +1252,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, #0a3654 0%, var(--peacock-blue) 60%, var(--peacock-blue-light) 100%);
+    background: linear-gradient(135deg, #0a3654 0%, var(--peacock-blue) 50%, var(--peacock-blue-light) 100%);
     color: var(--white);
     padding: 80px 0 40px;
 }
@@ -1389,7 +1389,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 80%;
         max-width: 320px;
         height: 100vh;
-        background: linear-gradient(135deg, #0a3654 0%, var(--peacock-blue) 60%, var(--peacock-blue-light) 100%);
+        background: linear-gradient(135deg, #0a3654 0%, var(--peacock-blue) 50%, var(--peacock-blue-light) 100%);
         flex-direction: column;
         justify-content: center;
         align-items: center;
