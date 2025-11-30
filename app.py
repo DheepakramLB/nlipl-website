@@ -1,5 +1,5 @@
 """
-Namakkal Logistics India P Ltd (NLIPL) - Website
+Namakkal Logistics India (P) Ltd (NLIPL) - Website
 A Flask-based website for transport and logistics company
 """
 
@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # Company Information
 COMPANY_INFO = {
-    "name": "Namakkal Logistics India P Ltd",
+    "name": "Namakkal Logistics India (P) Ltd",
     "short_name": "NLIPL",
     "tagline": "We Carry With Care",
     "phone": "+91 44 XXXX XXXX",
