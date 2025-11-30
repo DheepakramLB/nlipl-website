@@ -5,12 +5,12 @@
 
 /* CSS Custom Properties */
 :root {
-    /* Primary Colors - Peacock Blue Theme */
+    /* Primary Colors - Sky Blue Theme */
     --primary-dark: #051b2c;
-    --primary-navy: #0a4d8c;
-    --peacock-blue: #0066a4;
-    --peacock-blue-light: #0080c4;
-    --peacock-teal: #007a7a;
+    --primary-navy: #5ba3d0;
+    --peacock-blue: #87cefa;
+    --peacock-blue-light: #a8dbf5;
+    --peacock-teal: #6bb8e8;
     --accent-orange: #e85d2d;
     --accent-orange-light: #ff7043;
     --accent-gold: #c9a227;
