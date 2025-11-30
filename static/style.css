@@ -12,8 +12,8 @@
     --peacock-blue: #00A5D1;
     --peacock-blue-light: #0090b8;
     --peacock-teal: #0090b8;
-    --accent-orange: #e85d2d;
-    --accent-orange-light: #ff7043;
+    --accent-orange: #FFD700;
+    --accent-orange-light: #f2cf08;
     --accent-gold: #c9a227;
     
     /* Neutrals */
@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary:hover {
-    background: var(--accent-orange-light);
+    background: var(--accent-orange);
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(232, 93, 45, 0.3);
 }
