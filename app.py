@@ -71,7 +71,7 @@ INDUSTRIES = [
 STATS = [
     {"number": "17+", "label": "Years of Excellence"},
     {"number": "20+", "label": "Dedicated Employees"},
-    {"number": "Pan-India", "label": "Network Coverage"},
+    {"number": "Nation-wide", "label": "Network Coverage"},
     {"number": "Bank", "label": "Approved Operator"}
 ]
 
