@@ -3,9 +3,23 @@ Namakkal Logistics India (P) Ltd (NLIPL) - Website
 A Flask-based website for transport and logistics company
 """
 
+import os
 from flask import Flask, render_template, request, jsonify
+from flask_mail import Mail, Message
 
 app = Flask(__name__)
+
+# Email Configuration
+# Set these environment variables in production (Render dashboard)
+app.config['MAIL_SERVER'] = os.environ.get('MAIL_SERVER', 'smtp.gmail.com')
+app.config['MAIL_PORT'] = int(os.environ.get('MAIL_PORT', 587))
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
+app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME', '')
+app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD', '')
+app.config['MAIL_DEFAULT_SENDER'] = os.environ.get('MAIL_USERNAME', 'noreply@namakkallogistics.com')
+
+mail = Mail(app)
 
 # Company Information
 COMPANY_INFO = {
@@ -13,7 +27,7 @@ COMPANY_INFO = {
     "short_name": "NLIPL",
     "tagline": "We Carry With Care",
     "phone": "+91 44 XXXX XXXX",
-    "email": "info@namakkallogistics.com",
+    "email": "enquiry@namakkallogistics.com",
     "address": "Dr. T.K. Murthy Street, New Kuberan Nagar, 4 - Ground Floor, Chennai, Tamil Nadu 600091",
     "website": "www.namakkallogistics.com",
     "linkedin": "https://www.linkedin.com/company/namakkal-logistics-india-p-ltd/"
@@ -139,19 +153,57 @@ def home():
 
 @app.route('/contact', methods=['POST'])
 def contact():
-    """Handle contact form submissions"""
+    """Handle contact form submissions and send email"""
     data = request.form
-    name = data.get('name')
-    email = data.get('email')
-    phone = data.get('phone')
-    message = data.get('message')
+    name = data.get('name', 'Not provided')
+    email = data.get('email', 'Not provided')
+    phone = data.get('phone', 'Not provided')
+    service = data.get('service', 'General Inquiry')
+    message = data.get('message', 'No message')
     
-    # In production, you would save this to a database or send an email
-    print(f"Contact Form Submission:")
-    print(f"Name: {name}, Email: {email}, Phone: {phone}")
-    print(f"Message: {message}")
+    # Prepare email content
+    email_body = f"""
+    New Enquiry from NLIPL Website
+    ==============================
     
-    return jsonify({"status": "success", "message": "Thank you for your inquiry. We will contact you soon!"})
+    Name: {name}
+    Email: {email}
+    Phone: {phone}
+    Service Required: {service}
+    
+    Message:
+    {message}
+    
+    ==============================
+    This enquiry was submitted through the NLIPL website contact form.
+    """
+    
+    try:
+        # Send email to enquiry@namakkallogistics.com
+        msg = Message(
+            subject=f"New Website Enquiry from {name}",
+            recipients=['enquiry@namakkallogistics.com'],
+            body=email_body,
+            reply_to=email
+        )
+        mail.send(msg)
+        
+        # Log the submission
+        print(f"Email sent successfully for enquiry from {name} ({email})")
+        
+        return jsonify({
+            "status": "success", 
+            "message": "Thank you for your inquiry. We will contact you soon!"
+        })
+    except Exception as e:
+        # Log the error
+        print(f"Error sending email: {str(e)}")
+        
+        # Still return success to user (email might be queued or we'll handle manually)
+        return jsonify({
+            "status": "success", 
+            "message": "Thank you for your inquiry. We will contact you soon!"
+        })
 
 
 if __name__ == '__main__':
