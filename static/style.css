@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--peacock-blue) 80%, var(--peacock-blue-light) 100%);
+    background: linear-gradient(135deg, #0a3654 0%, var(--peacock-blue) 60%, var(--peacock-blue-light) 100%);
 }
 
 .hero-pattern {
