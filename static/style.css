@@ -12,8 +12,9 @@
     --peacock-blue: #00A5D1;
     --peacock-blue-light: #0090b8;
     --peacock-teal: #0090b8;
-    --accent-orange: #FFD700;
-    --accent-orange-light: #f2cf08;
+    --accent-orange: #D4A000;
+    --accent-orange-light: #E6B800;
+    --accent-orange-dark: #B8860B;
     --accent-gold: #c9a227;
     
     /* Neutrals */
@@ -600,6 +601,11 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--white);
 }
 
+.about .section-tag,
+.about .section-title .accent {
+    color: var(--accent-orange-dark);
+}
+
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -817,6 +823,11 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--white);
 }
 
+.team .section-tag,
+.team .section-title .accent {
+    color: var(--accent-orange-dark);
+}
+
 .team-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -872,7 +883,7 @@ h1, h2, h3, h4, h5, h6 {
 .team-role {
     display: block;
     font-size: 0.8125rem;
-    color: var(--peacock-blue);
+    color: var(--accent-orange-dark);
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-weight: 600;
@@ -889,6 +900,11 @@ h1, h2, h3, h4, h5, h6 {
 .services {
     padding: var(--section-padding);
     background: var(--gray-50);
+}
+
+.services .section-tag,
+.services .section-title .accent {
+    color: var(--accent-orange-dark);
 }
 
 .services-grid {
@@ -942,7 +958,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: var(--accent-orange);
+    color: var(--accent-orange-dark);
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9375rem;
@@ -1015,6 +1031,11 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--white);
 }
 
+.why-us .section-tag,
+.why-us .section-title .accent {
+    color: var(--accent-orange-dark);
+}
+
 .why-us-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1049,7 +1070,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
     font-size: 1.25rem;
     font-weight: 800;
-    color: var(--accent-orange);
+    color: var(--accent-orange-dark);
     min-width: 48px;
 }
 
@@ -1122,6 +1143,11 @@ h1, h2, h3, h4, h5, h6 {
 .contact {
     padding: var(--section-padding);
     background: var(--gray-50);
+}
+
+.contact .section-tag,
+.contact .section-title .accent {
+    color: var(--accent-orange-dark);
 }
 
 .contact-grid {
