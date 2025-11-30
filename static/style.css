@@ -12,9 +12,9 @@
     --peacock-blue: #00A5D1;
     --peacock-blue-light: #0090b8;
     --peacock-teal: #0090b8;
-    --accent-orange: #D4A000;
-    --accent-orange-light: #E6B800;
-    --accent-orange-dark: #B8860B;
+    --accent-orange: #D97706;
+    --accent-orange-light: #F59E0B;
+    --accent-orange-dark: #B45309;
     --accent-gold: #c9a227;
     
     /* Neutrals */
@@ -278,9 +278,15 @@ h1, h2, h3, h4, h5, h6 {
 .logo-tagline {
     font-size: 0.6875rem;
     font-weight: 500;
-    color: var(--accent-orange);
+    color: var(--white);
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    opacity: 0.9;
+}
+
+.navbar.scrolled .logo-tagline {
+    color: var(--accent-orange-dark);
+    opacity: 1;
 }
 
 .footer-logo .logo-text {
@@ -458,13 +464,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title-line.accent {
-    color: var(--accent-orange);
+    color: var(--white);
 }
 
 .hero-tagline {
     font-size: clamp(1.5rem, 3vw, 2.25rem);
     font-weight: 700;
-    color: var(--accent-orange);
+    color: #7dd3fc;
     margin-bottom: 24px;
     animation: fadeInUp 0.6s ease 0.15s forwards;
     opacity: 0;
@@ -474,7 +480,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-subtitle {
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--accent-orange);
+    color: rgba(255, 255, 255, 0.85);
     margin-bottom: 20px;
     animation: fadeInUp 0.6s ease 0.2s forwards;
     opacity: 0;
@@ -581,7 +587,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
     font-size: 2.25rem;
     font-weight: 800;
-    color: var(--accent-orange);
+    color: var(--white);
     margin-bottom: 8px;
     letter-spacing: -0.02em;
     white-space: nowrap;
@@ -725,7 +731,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .leadership .section-title .accent {
-    color: var(--accent-orange);
+    color: var(--white);
 }
 
 .leadership-grid {
@@ -786,10 +792,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .leader-role {
     font-size: 0.875rem;
-    color: var(--accent-orange);
+    color: var(--white);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 600;
+    opacity: 0.9;
 }
 
 .leader-bio {
@@ -803,18 +810,18 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: var(--white);
+    color: #fb923c;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9375rem;
     padding: 12px 0;
-    border-bottom: 2px solid var(--white);
+    border-bottom: 2px solid #fb923c;
     transition: all var(--transition-fast);
 }
 
 .leader-linkedin:hover {
-    color: var(--accent-orange);
-    border-color: var(--accent-orange);
+    color: #fdba74;
+    border-color: #fdba74;
 }
 
 /* Team Section */
@@ -987,7 +994,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .industries .section-title .accent {
-    color: var(--accent-orange);
+    color: var(--white);
 }
 
 .industries-wrapper {
@@ -1303,19 +1310,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-tagline {
-    color: var(--accent-orange) !important;
+    color: var(--white) !important;
     font-weight: 600;
+    opacity: 0.9;
 }
 
 .footer-website a {
-    color: var(--accent-orange);
+    color: var(--white);
     text-decoration: none;
     transition: color var(--transition-fast);
     font-size: 0.875rem;
 }
 
 .footer-website a:hover {
-    color: var(--accent-orange);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-links h4,
@@ -1344,7 +1352,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-links a:hover {
-    color: var(--accent-orange);
+    color: var(--white);
 }
 
 .footer-contact p {

@@ -46,11 +46,6 @@ SERVICES = [
         "icon": "🚛"
     },
     {
-        "title": "Warehousing & 3PL",
-        "description": "State-of-the-art warehousing facilities with complete supply chain management.",
-        "icon": "🏭"
-    },
-    {
         "title": "Freight Forwarding",
         "description": "Seamless international freight forwarding with multimodal transport solutions.",
         "icon": "✈️"
@@ -84,8 +79,8 @@ INDUSTRIES = [
 # Stats
 STATS = [
     {"number": "17+", "label": "Years of Excellence"},
-    {"number": "IBA Approved", "label": "Logistics Operator"},
-    {"number": "Nation-wide", "label": "Transport Operations"},
+    {"number": "IBA Approved", "label": "Logistics"},
+    {"number": "Nation-wide", "label": "Operations"},
     {"number": "20+", "label": "Dedicated Employees"},
 ]
 
@@ -156,6 +151,7 @@ def contact():
     """Handle contact form submissions and send email"""
     data = request.form
     name = data.get('name', 'Not provided')
+    company = data.get('company', 'Not provided')
     email = data.get('email', 'Not provided')
     phone = data.get('phone', 'Not provided')
     service = data.get('service', 'General Inquiry')
@@ -167,6 +163,7 @@ def contact():
     ==============================
     
     Name: {name}
+    Company: {company}
     Email: {email}
     Phone: {phone}
     Service Required: {service}
